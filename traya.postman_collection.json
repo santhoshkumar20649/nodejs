@@ -1,0 +1,117 @@
+{
+	"info": {
+		"_postman_id": "43a08848-4769-4437-8159-e182a55ef0c0",
+		"name": "traya",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27658520"
+	},
+	"item": [
+		{
+			"name": "createdUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"santhosh\",\r\n    \"email\": \"santhoshsfdret@gmail.com\",\r\n    \"password\": \"fdfsdfs\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/user/createUser",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"user",
+						"createUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"santhosh@gmail.com\",\r\n    \"password\": \"fdfsdfs\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/user/login",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getUserFeedback",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "addFeedback",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/user/addFeedback",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"user",
+						"addFeedback"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateFeedback",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"feedbackStar\": 5,\r\n    \"feedbackMessage\": \"message\",\r\n    \"id\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/user/updateFeedback",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"user",
+						"updateFeedback"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
